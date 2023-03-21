@@ -12,8 +12,6 @@ enum NetworkError : Error {
     case invalidServerResponse
 }
 
-
-
 class UserWebServices : IUserServicesProtocol {
     
     var networkType: String = "Webservices"

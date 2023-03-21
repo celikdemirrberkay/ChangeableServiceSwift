@@ -11,7 +11,7 @@ import Foundation
 protocol IUserServicesProtocol {
     
     func getDataFromAPI(_ resource: String) async throws -> [User]
-    var networkType : String{get}
+    var networkType : String {get}
     
     
 }

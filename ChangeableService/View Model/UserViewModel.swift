@@ -38,9 +38,9 @@ class UserListViewModel : ObservableObject{
     func getDatas() async{
         var resource = ""
         if service.networkType == "Localservice"{
-            resource = "users"
+            resource = Constants.localResource()
         }else{
-            resource = "https://jsonplaceholder.typicode.com/users"
+            resource = Constants.webResource()
         }
         
         do{

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F03F6A8429CA002B0092BDF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03F6A8329CA002B0092BDF6 /* Constants.swift */; };
 		F054909429C9DE0F003418F6 /* ChangeableServiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F054909329C9DE0F003418F6 /* ChangeableServiceApp.swift */; };
 		F054909629C9DE0F003418F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F054909529C9DE0F003418F6 /* ContentView.swift */; };
 		F054909829C9DE0F003418F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F054909729C9DE0F003418F6 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F03F6A8329CA002B0092BDF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F054909029C9DE0F003418F6 /* ChangeableService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeableService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F054909329C9DE0F003418F6 /* ChangeableServiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeableServiceApp.swift; sourceTree = "<group>"; };
 		F054909529C9DE0F003418F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F03F6A8229C9FFF70092BDF6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F03F6A8329CA002B0092BDF6 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		F054908729C9DE0F003418F6 = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +81,13 @@
 		F054909229C9DE0F003418F6 /* ChangeableService */ = {
 			isa = PBXGroup;
 			children = (
-				F05490AF29C9F397003418F6 /* Local  */,
 				F05490A129C9DF86003418F6 /* Model */,
 				F03F6A8129C9FF090092BDF6 /* View */,
 				F05490AA29C9E572003418F6 /* View Model */,
 				F05490A729C9E4B8003418F6 /* Protocols */,
 				F05490A429C9E020003418F6 /* Services */,
+				F03F6A8229C9FFF70092BDF6 /* Constants */,
+				F05490AF29C9F397003418F6 /* Local  */,
 				F054909329C9DE0F003418F6 /* ChangeableServiceApp.swift */,
 				F054909729C9DE0F003418F6 /* Assets.xcassets */,
 				F054909929C9DE0F003418F6 /* Preview Content */,
@@ -211,6 +222,7 @@
 				F05490A629C9E031003418F6 /* User Services.swift in Sources */,
 				F054909429C9DE0F003418F6 /* ChangeableServiceApp.swift in Sources */,
 				F05490A329C9DF91003418F6 /* User.swift in Sources */,
+				F03F6A8429CA002B0092BDF6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
