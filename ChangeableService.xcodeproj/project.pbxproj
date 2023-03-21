@@ -11,6 +11,12 @@
 		F054909629C9DE0F003418F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F054909529C9DE0F003418F6 /* ContentView.swift */; };
 		F054909829C9DE0F003418F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F054909729C9DE0F003418F6 /* Assets.xcassets */; };
 		F054909B29C9DE0F003418F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F054909A29C9DE0F003418F6 /* Preview Assets.xcassets */; };
+		F05490A329C9DF91003418F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05490A229C9DF91003418F6 /* User.swift */; };
+		F05490A629C9E031003418F6 /* User Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05490A529C9E031003418F6 /* User Services.swift */; };
+		F05490A929C9E4DB003418F6 /* IUserServicesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05490A829C9E4DB003418F6 /* IUserServicesProtocol.swift */; };
+		F05490AC29C9E5B4003418F6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05490AB29C9E5B3003418F6 /* UserViewModel.swift */; };
+		F05490AE29C9F389003418F6 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = F05490AD29C9F389003418F6 /* users.json */; };
+		F05490B129C9F52D003418F6 /* Local Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05490B029C9F52D003418F6 /* Local Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		F054909529C9DE0F003418F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F054909729C9DE0F003418F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F054909A29C9DE0F003418F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F05490A229C9DF91003418F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F05490A529C9E031003418F6 /* User Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User Services.swift"; sourceTree = "<group>"; };
+		F05490A829C9E4DB003418F6 /* IUserServicesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserServicesProtocol.swift; sourceTree = "<group>"; };
+		F05490AB29C9E5B3003418F6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F05490AD29C9F389003418F6 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		F05490B029C9F52D003418F6 /* Local Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Local Services.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F03F6A8129C9FF090092BDF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F054909529C9DE0F003418F6 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F054908729C9DE0F003418F6 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +71,13 @@
 		F054909229C9DE0F003418F6 /* ChangeableService */ = {
 			isa = PBXGroup;
 			children = (
+				F05490AF29C9F397003418F6 /* Local  */,
+				F05490A129C9DF86003418F6 /* Model */,
+				F03F6A8129C9FF090092BDF6 /* View */,
+				F05490AA29C9E572003418F6 /* View Model */,
+				F05490A729C9E4B8003418F6 /* Protocols */,
+				F05490A429C9E020003418F6 /* Services */,
 				F054909329C9DE0F003418F6 /* ChangeableServiceApp.swift */,
-				F054909529C9DE0F003418F6 /* ContentView.swift */,
 				F054909729C9DE0F003418F6 /* Assets.xcassets */,
 				F054909929C9DE0F003418F6 /* Preview Content */,
 			);
@@ -65,6 +90,47 @@
 				F054909A29C9DE0F003418F6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F05490A129C9DF86003418F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F05490A229C9DF91003418F6 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F05490A429C9E020003418F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F05490A529C9E031003418F6 /* User Services.swift */,
+				F05490B029C9F52D003418F6 /* Local Services.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F05490A729C9E4B8003418F6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F05490A829C9E4DB003418F6 /* IUserServicesProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F05490AA29C9E572003418F6 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				F05490AB29C9E5B3003418F6 /* UserViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		F05490AF29C9F397003418F6 /* Local  */ = {
+			isa = PBXGroup;
+			children = (
+				F05490AD29C9F389003418F6 /* users.json */,
+			);
+			path = "Local ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05490AE29C9F389003418F6 /* users.json in Resources */,
 				F054909B29C9DE0F003418F6 /* Preview Assets.xcassets in Resources */,
 				F054909829C9DE0F003418F6 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +204,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05490A929C9E4DB003418F6 /* IUserServicesProtocol.swift in Sources */,
+				F05490AC29C9E5B4003418F6 /* UserViewModel.swift in Sources */,
+				F05490B129C9F52D003418F6 /* Local Services.swift in Sources */,
 				F054909629C9DE0F003418F6 /* ContentView.swift in Sources */,
+				F05490A629C9E031003418F6 /* User Services.swift in Sources */,
 				F054909429C9DE0F003418F6 /* ChangeableServiceApp.swift in Sources */,
+				F05490A329C9DF91003418F6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
